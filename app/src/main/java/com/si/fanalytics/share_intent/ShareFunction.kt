@@ -12,5 +12,5 @@ fun shareImageAndText(context: Context, imageUri: Uri, text: String) {
         type = "image/*"
         addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
     }
-    context.startActivity(Intent.createChooser(shareIntent, "Share image and text via"))
+    context.startActivity(Intent.createChooser(shareIntent, "Share image and text"))
 }
