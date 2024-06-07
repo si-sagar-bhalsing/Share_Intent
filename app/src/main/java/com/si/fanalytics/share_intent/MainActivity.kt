@@ -32,7 +32,6 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
-import coil.compose.rememberImagePainter
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -80,7 +79,7 @@ fun ShareImageAndTextScreen() {
                 painter = rememberAsyncImagePainter(it),
                 contentDescription = null,
                 modifier = Modifier
-                    .clickable { /* handle image click */ },
+                    .clickable {  },
                 contentScale = ContentScale.Crop
             )
         }
