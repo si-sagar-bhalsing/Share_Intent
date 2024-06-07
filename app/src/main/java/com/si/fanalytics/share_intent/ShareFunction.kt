@@ -16,8 +16,3 @@ fun shareImageAndText(context: Context, imageUri: Uri, text: String) {
     }
     context.startActivity(Intent.createChooser(shareIntent, "Share image and text via"))
 }
-
-// Helper function to get Uri for the image file
-fun getImageUri(context: Context, imageFile: File): Uri {
-    return FileProvider.getUriForFile(context, "${context.packageName}.fileprovider", imageFile)
-}
